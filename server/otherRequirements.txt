@@ -1,0 +1,6 @@
+rodar o comando python -m spacy download pt_core_news_sm após instalar o spacy
+instalar o tensorflow com python -m pip install tensorflow
+seguir os passos https://huggingface.co/docs/transformers/installation
+
+pip install transformers[tf-cpu]
+pip install transformers[torch]
