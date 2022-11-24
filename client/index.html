@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>IA Summarizer</title>
+  </head>
+  <body>
+    <header><h1>SUMMARIZER</h1></header>
+    <main>
+      <div class="container">
+        <div class="options" id="options" name="options">
+          <div id="radio">
+            <input
+              id="text"
+              name="input-type"
+              type="radio"
+              value="text"
+              checked />
+            <label for="text">Text</label>
+          </div>
+          <div id="radio">
+            <input id="url" name="input-type" type="radio" value="url" />
+            <label for="url">URL</label>
+          </div>
+
+          <select id="algorithm" name="algorithm">
+            <option value="AutoTokenizer">AutoTokenizer</option>
+            <option value="LSA">LSA</option>
+            <option value="Spacy">Spacy</option>
+            <option value="T5">T5</option>
+          </select>
+        </div>
+
+        <br /><br />
+        <textarea
+          type="text"
+          id="input-text"
+          name="input-text"
+          rows="10"
+          cols="60"
+          autofocus
+          placeholder="Insira seu texto..."></textarea>
+        <br /><br />
+
+        <div id="button"><button id="send-button">Resumir</button></div>
+      </div>
+      <div class="container">
+        <textarea
+          readonly
+          type="text"
+          id="summerized-text"
+          name="summerized-text"
+          rows="10"
+          cols="60"></textarea>
+      </div>
+
+      <div class="modal"></div>
+    </main>
+
+    <script type="text/javascript" src="./js/jquery.js"></script>
+    <script type="text/javascript" src="./js/index.js"></script>
+  </body>
+</html>

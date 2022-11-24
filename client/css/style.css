@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100vw;
+  background-color: #f5ee9e;
+}
+
+body {
+  line-height: 1.5;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+h1 {
+  color: #ffffff;
+  letter-spacing: 10px;
+}
+
+header {
+  background-color: #2d728f;
+  padding: 1rem;
+  text-align: center;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.options {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+select {
+  background-color: #2d728f;
+  color: #ffffff;
+  letter-spacing: 2.5px;
+  padding: 0.5rem 2rem;
+  border: none;
+  border-radius: 1rem;
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 1em;
+}
+
+#button {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#input-text::placeholder {
+  margin-left: 5px;
+}
+
+textarea {
+  border: none;
+  padding: 1rem;
+  display: flex;
+}
+
+button {
+  background-color: #2d728f;
+  color: #ffffff;
+  letter-spacing: 2.5px;
+  padding: 0.5rem 2rem;
+  border: none;
+  border-radius: 1rem;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #2d728f80 url("../images/loading-gif.gif") 50% 50% no-repeat;
+}
+
+body.loading .modal {
+  overflow: hidden;
+}
+
+body.loading .modal {
+  display: block;
+}
